@@ -11,7 +11,7 @@ CREATE TABLE simourg.process_fields (
     name VARCHAR(255),
     type ENUM('text', 'number', 'date'),
     value TEXT,
-    number_format VARCHAR(255),
-    date_format VARCHAR(255),
+    number_format VARCHAR(255) NULL,
+    date_format VARCHAR(255) NULL,
     FOREIGN KEY (process_id) REFERENCES processes (id)
 );
